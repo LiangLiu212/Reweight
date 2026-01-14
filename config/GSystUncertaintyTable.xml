@@ -37,6 +37,9 @@ values for each Reweight tweak dial. All of these have default values of zero.
    <param type="double" name="ZNormCCQE@PlusOneSigma"> 0.20 </param>
    <param type="double" name="ZNormCCQE@MinusOneSigma"> 0.15 </param>
 
+   <!-- The z-expansion axial FFs have keys for multiple parameter sets.
+        These are defaults from A. S. Meyer, M. Betancourt, R. Gran, and R. J. Hill, 
+	Phys. Rev. D 93 (2016) 113015 -->
    <param type="double" name="ZExpA1CCQE@PlusOneSigma"> 0.14 </param>
    <param type="double" name="ZExpA1CCQE@MinusOneSigma"> 0.14 </param>
 
@@ -329,6 +332,53 @@ values for each Reweight tweak dial. All of these have default values of zero.
    <param type="double" name="ZExpELFFBN4CCQE@MinusOneSigma"> 41.4534     </param>
 
  </param_set>
+
+ <!-- Additional parameter sets for z-expansion axial form factors added by J. Plows -->
+ <!-- T. Cai et al (MINERvA), Nature 614 (2023) 48-53, kmax=8 -->
+ <param_set name="ZExpAxialFF-minervaNature">
+   <param type="double" name="ZExpA1CCQE@PlusOneSigma"> 0.31 </param>
+   <param type="double" name="ZExpA1CCQE@MinusOneSigma"> 0.31 </param>
+
+   <param type="double" name="ZExpA2CCQE@PlusOneSigma"> 0.7 </param>
+   <param type="double" name="ZExpA2CCQE@MinusOneSigma"> 0.7 </param>
+
+   <param type="double" name="ZExpA3CCQE@PlusOneSigma"> 1.9 </param>
+   <param type="double" name="ZExpA3CCQE@MinusOneSigma"> 1.9 </param>
+
+   <param type="double" name="ZExpA4CCQE@PlusOneSigma"> 3.5 </param>
+   <param type="double" name="ZExpA4CCQE@MinusOneSigma"> 3.5 </param>
+ </param_set>
+
+ <!-- A. Meyer et al (MINERvA), arXiv: 2512.14097, kmax=6 -->
+ <!-- This publication also includes a LQCD fit so we put this in too -->
+ <param_set name="ZExpAxialFF-minervaElementaryTarget">
+   <param type="double" name="ZExpA1CCQE@PlusOneSigma"> 0.24 </param>
+   <param type="double" name="ZExpA1CCQE@MinusOneSigma"> 0.24 </param>
+
+   <param type="double" name="ZExpA2CCQE@PlusOneSigma"> 0.30 </param>
+   <param type="double" name="ZExpA2CCQE@MinusOneSigma"> 0.30 </param>
+
+   <param type="double" name="ZExpA3CCQE@PlusOneSigma"> 0.0 </param>
+   <param type="double" name="ZExpA3CCQE@MinusOneSigma"> 0.0 </param>
+
+   <param type="double" name="ZExpA4CCQE@PlusOneSigma"> 0.0 </param>
+   <param type="double" name="ZExpA4CCQE@MinusOneSigma"> 0.0 </param>
+ </param_set>
+
+ <param_set name="ZExpAxialFF-LQCD">
+   <param type="double" name="ZExpA1CCQE@PlusOneSigma"> 0.052 </param>
+   <param type="double" name="ZExpA1CCQE@MinusOneSigma"> 0.052 </param>
+
+   <param type="double" name="ZExpA2CCQE@PlusOneSigma"> 0.13 </param>
+   <param type="double" name="ZExpA2CCQE@MinusOneSigma"> 0.13 </param>
+
+   <param type="double" name="ZExpA3CCQE@PlusOneSigma"> 0.0 </param>
+   <param type="double" name="ZExpA3CCQE@MinusOneSigma"> 0.0 </param>
+
+   <param type="double" name="ZExpA4CCQE@PlusOneSigma"> 0.0 </param>
+   <param type="double" name="ZExpA4CCQE@MinusOneSigma"> 0.0 </param>
+ </param_set>
+
  <param_set name="CovarianceMatrix">
    <param type="mat-double" name="ZExpELFF@CovarianceMatrix" importfile="true"> data/covariances/ELZExpFF.dat </param>
  </param_set>
